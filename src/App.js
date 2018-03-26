@@ -2,17 +2,17 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import Recipe from './Recipe';
+
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          Hi Mom & Dad!
-        </p>
+        <Recipe 
+          title="pizza" 
+          ingredients={["dough", "olive oil", "veggies"]}
+          instructions="Go to Arizmendi's on Lakeshore"
+          img="http://pixel.nymag.com/imgs/slideshows/2013/02/sf-pizza/arizmendi-pizza.nocrop.w670.h458.jpg"/>
       </div>
     );
   }
